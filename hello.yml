@@ -1,0 +1,9 @@
+---
+- name: Test ManageIQ Ansible
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Test task
+      ansible.builtin.debug:
+        msg: "Hello from ManageIQ embedded Ansible!"
